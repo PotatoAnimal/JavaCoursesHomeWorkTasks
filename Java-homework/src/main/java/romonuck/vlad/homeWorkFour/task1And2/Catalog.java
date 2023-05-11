@@ -8,10 +8,9 @@ public class Catalog {
         if (list.isEmpty()){
             return null;
         }
-        List<Student> list1 = list
+        return list
                 .stream()
                 .filter(student -> student.getFaculty().equals(s))
                 .collect(Collectors.toList());
-        return list1;
     }
 }
