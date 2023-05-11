@@ -6,7 +6,7 @@ public class User {
     private String password;
 
     public boolean isAuthenticated (){
-        return (email != null && password != null) ? true : false;
+        return email != null && password != null;
     }
 
     public User() {
